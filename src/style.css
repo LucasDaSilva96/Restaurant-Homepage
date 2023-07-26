@@ -7,7 +7,7 @@ body {
 }
 
 .navBar {
-  width: 100vw;
+  max-width: 100vw;
   display: flex;
   align-items: center;
   background-color: #ffffff;
@@ -43,4 +43,23 @@ li {
 
 li:hover {
   border-bottom: #000000 solid 2px;
+}
+
+.hero-image-box {
+  height: 500px;
+  background-image: url(./images/Restaurant-Hero.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero-text-box {
+  padding: 50px;
+  text-align: center;
+}
+
+.hero-text {
+  font-size: 18px;
+  letter-spacing: 0.6px;
+  line-height: 1.2;
 }
