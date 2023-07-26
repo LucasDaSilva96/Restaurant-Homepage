@@ -14,6 +14,13 @@ function mainFunction() {
   htmlBody.appendChild(createHeroSection());
   // ********
 
+  // Homepage Section
+  const homeTab = document.getElementById("home");
+  homeTab.addEventListener("click", function () {
+    removeSecondChildEl();
+    htmlBody.appendChild(createHeroSection());
+  });
+
   // Menu Section
   const menuTab = document.getElementById("menu");
   menuTab.addEventListener("click", function () {
