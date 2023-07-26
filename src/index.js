@@ -1,4 +1,6 @@
 import { createNavBar } from "./navBar.js";
+import { createHeroSection } from "./hero.js";
+
 import "./style.css";
 
 function mainFunction() {
@@ -7,6 +9,7 @@ function mainFunction() {
   navDiv.classList.add("nav-div");
 
   htmlBody.appendChild(createNavBar());
+  htmlBody.appendChild(createHeroSection());
 }
 
 mainFunction();
