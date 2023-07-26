@@ -12,6 +12,8 @@ export function createNavBar() {
   <ul>
   <li id="home">Home</li>
   <li id="menu">Menu</li>
+  <li id="gallery">Gallery</li>
+  <li id="review">Review</li>
   <li id="contact">Contact</li>
   </ul>
   </div>
