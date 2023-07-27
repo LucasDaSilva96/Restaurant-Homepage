@@ -5,6 +5,7 @@ body {
   font-family: italic, sans-serif;
   scroll-behavior: smooth;
   background-color: #fbf6ef;
+  min-height: 100vh;
 }
 
 .navBar {
@@ -107,75 +108,100 @@ li:hover {
 .big {
   justify-self: center;
   align-self: center;
-  animation-duration: 2s;
-  animation-name: shadowAni;
-  animation-iteration-count: infinite;
+}
+
+.big:hover {
+  box-shadow: none;
+  transform: scale(1);
 }
 
 .big-h3 {
   font-size: 28px;
 }
 
-@keyframes shadowAni {
-  0% {
-    box-shadow: none;
-  }
-
-  25% {
-    transform: scale(1.002);
-  }
-
-  50% {
-    transform: scale(1.004);
-  }
-
-  75% {
-    transform: scale(1.006);
-  }
-
-  100% {
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
-      rgba(255, 255, 255, 0.3) 0px 30px 60px -30px,
-      rgba(67, 72, 77, 0.35) 0px -2px 6px 0px inset;
-    transform: scale(1.008);
-  }
-}
-
 .gallery-container {
-  max-width: 1200px;
+  background-color: #000000;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 }
 
-.carousel {
-  white-space: nowrap;
+.gallery-h2 {
+  position: absolute;
+  top: 10px;
+}
+
+.mediaScroll {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(4, 1fr);
+  gap: 20px;
+  padding-bottom: 10px;
+  margin-top: 100px;
+}
+
+.img {
+  width: 440px;
+  height: 340px;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.img:hover {
+  box-shadow: rgba(124, 124, 124, 0.25) 0px 50px 100px -20px,
+    rgba(150, 150, 150, 0.3) 0px 30px 60px -30px,
+    rgba(81, 81, 82, 0.35) 0px -2px 6px 0px inset;
+  transform: scale(1.01);
 }
 
 .img-1 {
   background-image: url(./images/Biff-Burger.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .img-2 {
   background-image: url(./images/Brisket-Sandwich.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .img-3 {
   background-image: url(./images/Buttermilk-Crepes.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .img-4 {
   background-image: url(./images/Corned-Beef.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .img-5 {
   background-image: url(./images/Lamb-Stew.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .img-6 {
   background-image: url(./images/Pan-Seared.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .img-7 {
   background-image: url(./images/Roasted-Quails.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .img-8 {
   background-image: url(./images/Sweet-Fennel.jpg);
-}
-
-.carousel .img {
-  height: 440px;
-  object-fit: cover;
-  width: calc(100% / 3);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }

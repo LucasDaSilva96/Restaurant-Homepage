@@ -1,6 +1,7 @@
 import { createNavBar } from "./navBar.js";
 import { createHeroSection } from "./hero.js";
 import { createMenuSection } from "./menu.js";
+import { createGallerySection } from "./gallery.js";
 
 import "./style.css";
 
@@ -26,6 +27,13 @@ function mainFunction() {
   menuTab.addEventListener("click", function () {
     removeSecondChildEl();
     htmlBody.appendChild(createMenuSection());
+  });
+
+  // Gallery Section
+  const galleryTab = document.getElementById("gallery");
+  galleryTab.addEventListener("click", function () {
+    removeSecondChildEl();
+    htmlBody.appendChild(createGallerySection());
   });
 }
 
