@@ -4,13 +4,14 @@ body {
   box-sizing: border-box;
   font-family: italic, sans-serif;
   scroll-behavior: smooth;
+  background-color: #fbf6ef;
 }
 
 .navBar {
   max-width: 100vw;
   display: flex;
   align-items: center;
-  background-color: #ffffff;
+  background-color: #dce0d9;
 }
 
 .h1-box {
@@ -37,12 +38,16 @@ li {
   margin: 20px;
   color: #000000;
   cursor: pointer;
-  border-bottom: #ffffff solid 2px;
+  border-bottom: #dce0d9 solid 2px;
   transition: all 0.3s ease-in-out;
 }
 
 li:hover {
   border-bottom: #000000 solid 2px;
+}
+
+#hero-section {
+  background-color: #fbf6ef;
 }
 
 .hero-image-box {
@@ -54,7 +59,7 @@ li:hover {
 }
 
 .hero-text-box {
-  padding: 50px;
+  padding: 20px 100px;
   text-align: center;
 }
 
@@ -78,11 +83,21 @@ li:hover {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(5, 1fr);
+  justify-items: center;
+  align-items: center;
   gap: 10px;
 }
 
 .menu-box {
   padding: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu-box:hover {
+  transform: scale(1.008);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(255, 255, 255, 0.3) 0px 30px 60px -30px,
+    rgba(67, 72, 77, 0.35) 0px -2px 6px 0px inset;
 }
 
 .menu-title {
@@ -92,8 +107,36 @@ li:hover {
 .big {
   justify-self: center;
   align-self: center;
+  animation-duration: 2s;
+  animation-name: shadowAni;
+  animation-iteration-count: infinite;
 }
 
 .big-h3 {
   font-size: 28px;
+}
+
+@keyframes shadowAni {
+  0% {
+    box-shadow: none;
+  }
+
+  25% {
+    transform: scale(1.002);
+  }
+
+  50% {
+    transform: scale(1.004);
+  }
+
+  75% {
+    transform: scale(1.006);
+  }
+
+  100% {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+      rgba(255, 255, 255, 0.3) 0px 30px 60px -30px,
+      rgba(67, 72, 77, 0.35) 0px -2px 6px 0px inset;
+    transform: scale(1.008);
+  }
 }
