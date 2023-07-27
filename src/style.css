@@ -140,3 +140,42 @@ li:hover {
     transform: scale(1.008);
   }
 }
+
+.gallery-container {
+  max-width: 1200px;
+}
+
+.carousel {
+  white-space: nowrap;
+}
+
+.img-1 {
+  background-image: url(./images/Biff-Burger.jpg);
+}
+.img-2 {
+  background-image: url(./images/Brisket-Sandwich.jpg);
+}
+.img-3 {
+  background-image: url(./images/Buttermilk-Crepes.jpg);
+}
+.img-4 {
+  background-image: url(./images/Corned-Beef.jpg);
+}
+.img-5 {
+  background-image: url(./images/Lamb-Stew.jpg);
+}
+.img-6 {
+  background-image: url(./images/Pan-Seared.jpg);
+}
+.img-7 {
+  background-image: url(./images/Roasted-Quails.jpg);
+}
+.img-8 {
+  background-image: url(./images/Sweet-Fennel.jpg);
+}
+
+.carousel .img {
+  height: 440px;
+  object-fit: cover;
+  width: calc(100% / 3);
+}
