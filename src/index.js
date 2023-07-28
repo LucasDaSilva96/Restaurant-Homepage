@@ -3,6 +3,7 @@ import { createHeroSection } from "./hero.js";
 import { createMenuSection } from "./menu.js";
 import { createGallerySection } from "./gallery.js";
 import { createReviewSection } from "./review.js";
+import { createContactFooterSection } from "./footer.js";
 
 import "./style.css";
 
@@ -42,6 +43,13 @@ function mainFunction() {
   reviewTab.addEventListener("click", function () {
     removeSecondChildEl();
     htmlBody.appendChild(createReviewSection());
+  });
+
+  // Footer/Contact Section
+  const contactTab = document.getElementById("contact");
+  contactTab.addEventListener("click", function () {
+    removeSecondChildEl();
+    htmlBody.appendChild(createContactFooterSection());
   });
 }
 

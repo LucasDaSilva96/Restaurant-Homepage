@@ -151,9 +151,6 @@ li:hover {
 }
 
 .img:hover {
-  box-shadow: rgba(124, 124, 124, 0.25) 0px 50px 100px -20px,
-    rgba(150, 150, 150, 0.3) 0px 30px 60px -30px,
-    rgba(81, 81, 82, 0.35) 0px -2px 6px 0px inset;
   transform: scale(1.01);
 }
 
@@ -237,4 +234,75 @@ li:hover {
 .review-box:hover {
   transform: scale(1.04);
   background-color: #131313;
+}
+
+#contact-footer-section {
+  background-color: #000000;
+  color: #ffffff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.img-box {
+  width: 440px;
+  height: 440px;
+  background-image: url(./images/Restaurant-Hero.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: all 0.3s ease-in-out;
+}
+
+.img-box:hover {
+  box-shadow: rgb(66, 66, 66) 0px 5px 15px;
+}
+
+.contact-footer-container {
+  margin-top: 50px;
+  align-self: center;
+  display: grid;
+  grid-template-columns: 0.7fr 1fr;
+}
+
+.information-container {
+  background-color: #ffffff;
+  color: #000000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.information-container:hover {
+  box-shadow: rgba(128, 128, 128, 0.56) 0px 22px 70px 4px;
+}
+
+.contact-box p {
+  border-bottom: solid 2px #ffffff;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.contact-box p:hover {
+  border-bottom: solid 2px #5a5a5a;
+}
+
+.footer {
+  align-self: center;
+  margin-top: auto;
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+.footer p {
+  cursor: pointer;
+  border-bottom: solid 3px #000000;
+}
+
+.footer p:hover {
+  border-bottom: solid 3px #5a5a5a;
 }
