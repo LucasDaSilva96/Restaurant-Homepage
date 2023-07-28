@@ -205,3 +205,36 @@ li:hover {
   background-position: center;
   background-repeat: no-repeat;
 }
+
+#review-section {
+  background-color: #000000;
+  color: #ffffff;
+  min-height: 100vh;
+}
+
+.review-container {
+  padding: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
+}
+
+.review-box {
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease-out;
+  border-radius: 10px;
+}
+
+.review-text-div p {
+  line-height: 1.5;
+}
+
+.review-box:hover {
+  transform: scale(1.04);
+  background-color: #131313;
+}
