@@ -40,11 +40,16 @@ li {
   color: #000000;
   cursor: pointer;
   border-bottom: #dce0d9 solid 2px;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 li:hover {
   border-bottom: #000000 solid 2px;
+}
+
+[data-active="true"] {
+  border-bottom: #000000 solid 2px;
+  transform: scale(1.08);
 }
 
 #hero-section {
