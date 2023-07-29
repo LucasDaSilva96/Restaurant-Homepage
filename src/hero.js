@@ -13,6 +13,10 @@ export function createHeroSection() {
   Step into a world of culinary delight as we take you on a gastronomic journey inspired by the rich and diverse 
   flavors of French cuisine.</p>
   </div>
+
+  <div class="welcome-txt-box">
+  <span>Bienvenue</span>
+  </div>
   
   </div>`;
 
