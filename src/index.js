@@ -15,12 +15,15 @@ function mainFunction() {
   // Homepage
   htmlBody.appendChild(createNavBar());
   htmlBody.appendChild(createHeroSection());
-  // ********
+
+  // All nav <li>
+  const nav_li = document.querySelectorAll(".nav-li");
 
   // Homepage Section
   const homeTab = document.getElementById("home");
   homeTab.addEventListener("click", function () {
     removeSecondChildEl();
+    changeActiveAttribute(nav_li, homeTab);
     htmlBody.appendChild(createHeroSection());
   });
 
@@ -28,6 +31,7 @@ function mainFunction() {
   const menuTab = document.getElementById("menu");
   menuTab.addEventListener("click", function () {
     removeSecondChildEl();
+    changeActiveAttribute(nav_li, menuTab);
     htmlBody.appendChild(createMenuSection());
   });
 
@@ -35,6 +39,7 @@ function mainFunction() {
   const galleryTab = document.getElementById("gallery");
   galleryTab.addEventListener("click", function () {
     removeSecondChildEl();
+    changeActiveAttribute(nav_li, galleryTab);
     htmlBody.appendChild(createGallerySection());
   });
 
@@ -42,6 +47,7 @@ function mainFunction() {
   const reviewTab = document.getElementById("review");
   reviewTab.addEventListener("click", function () {
     removeSecondChildEl();
+    changeActiveAttribute(nav_li, reviewTab);
     htmlBody.appendChild(createReviewSection());
   });
 
@@ -49,12 +55,15 @@ function mainFunction() {
   const contactTab = document.getElementById("contact");
   contactTab.addEventListener("click", function () {
     removeSecondChildEl();
+    changeActiveAttribute(nav_li, contactTab);
     htmlBody.appendChild(createContactFooterSection());
   });
 }
 
 mainFunction();
 
+// This function is for removing the second child of the body, so that
+// the program can append a new child/section
 function removeSecondChildEl() {
   // Get a reference to the <body> element
   const bodyElement = document.body;
@@ -64,5 +73,16 @@ function removeSecondChildEl() {
     // Get the second child element (index 1) and remove it from the <body>
     const secondChildElement = bodyElement.children[2];
     bodyElement.removeChild(secondChildElement);
+  }
+}
+
+// This function is for setting all the navbar <li> data-active to false
+// except the wanted one
+function changeActiveAttribute(nodeList, node) {
+  for (let i = 0; i < nodeList.length; i++) {
+    nodeList[i].dataset.active = "false";
+    if (nodeList[i] === node) {
+      node.dataset.active = "true";
+    }
   }
 }
