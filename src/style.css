@@ -110,17 +110,16 @@ li:hover {
 }
 
 .hero-container {
+  height: 100vh;
   padding: 100px;
   display: grid;
-  grid-template-rows: 1fr 0.4fr 0.2fr;
-  row-gap: 10px;
+  grid-template-rows: 1fr 0.4fr 0.8fr;
+  row-gap: 20px;
 }
 
 .hero-image-box {
   height: 500px;
   border-radius: 10px;
-  /* box-shadow: #6b6b6b77 0px 50px 100px -20px, #2b2b2b 0px 30px 60px -30px,
-    #808080 0px -2px 6px 0px inset; */
   background-image: url(./images/Restaurant-Hero.jpg);
   background-size: cover;
   background-position: center;
@@ -134,13 +133,19 @@ li:hover {
 }
 
 .welcome-txt-box {
-  margin-top: -80px;
   justify-self: center;
 }
 
 .welcome-txt-box span {
   font-size: 58px;
   border-bottom: 2px solid #ffd100;
+}
+
+.hero-footer {
+  margin-top: auto;
+  text-align: center;
+  background-color: #2b2b2b8c;
+  padding: 5px;
 }
 
 @keyframes shadowAni {
