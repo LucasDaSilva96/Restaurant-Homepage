@@ -17,8 +17,13 @@ export function createHeroSection() {
   <div class="welcome-txt-box">
   <span>Bienvenue</span>
   </div>
-  
-  </div>`;
+
+  </div>
+  <div class="hero-footer">
+  <p>All right reserved || LucasDaSilva96</p>
+  </div>
+
+  `;
 
   return heroSection;
 }
