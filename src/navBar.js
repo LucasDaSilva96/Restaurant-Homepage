@@ -10,11 +10,11 @@ export function createNavBar() {
   
   <div class="list-div">
   <ul>
-  <li id="home">Home</li>
-  <li id="menu">Menu</li>
-  <li id="gallery">Gallery</li>
-  <li id="review">Review</li>
-  <li id="contact">Contact</li>
+  <li id="home" data-active="true">Home</li>
+  <li id="menu" data-active="false">Menu</li>
+  <li id="gallery" data-active="false">Gallery</li>
+  <li id="review" data-active="false">Review</li>
+  <li id="contact" data-active="false">Contact</li>
   </ul>
   </div>
   `;
