@@ -66,7 +66,7 @@ mainFunction();
 // the program can append a new child/section
 function removeSecondChildEl() {
   // Get a reference to the <body> element
-  const bodyElement = document.body;
+  const bodyElement = document.querySelector("body");
 
   // Check if the body has at least two child elements
   if (bodyElement.children.length >= 2) {
