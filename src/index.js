@@ -72,7 +72,7 @@ function removeSecondChildEl() {
   if (bodyElement.children.length >= 2) {
     // Get the second child element (index 1) and remove it from the <body>
     const secondChildElement = bodyElement.children[2];
-    bodyElement.removeChild(secondChildElement);
+    return bodyElement.removeChild(secondChildElement);
   }
 }
 
